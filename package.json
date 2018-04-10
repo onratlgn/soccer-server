@@ -1,0 +1,29 @@
+{
+  "name": "ulak",
+  "version": "0.0.1",
+  "description": "MQTT-WS broker powered with mongoDB",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onratlgn/ulak.git"
+  },
+  "keywords": [
+    "mqtt",
+    "broker",
+    "websocket",
+    "mongodb"
+  ],
+  "author": "onratlgn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onratlgn/ulak/issues"
+  },
+  "homepage": "https://github.com/onratlgn/ulak#readme",
+  "dependencies": {
+    "aedes": "^0.33.0",
+    "websocket-stream": "^5.1.2"
+  }
+}
