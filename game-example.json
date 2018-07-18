@@ -1,0 +1,27 @@
+{
+    "gameID": "1",
+    "preSet": "user/asfddffsf",
+    "playerID": "Salah Jr.",
+    "instructions":[
+        {
+            "step": 0,
+            "devID": "dID1",
+            "timeLim": null,
+            "condition": {
+                "sensor":"sID1",
+                "value": 0.8,
+                "eval": "$lt"
+            }
+        },{
+            "step": 1,
+            "devID": "dID2",
+            "timeLim": 10000,
+            "condition": {
+                "sensor":"sID3",
+                "value": true,
+                "eval": "$eq"
+            }
+        }
+    ]
+}
+

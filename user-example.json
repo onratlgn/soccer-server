@@ -1,0 +1,17 @@
+{
+    "_id": "userID",
+    "devices": [
+        {
+            "devID": "did1",
+            "name" : "custom",
+            "type" : "cone",
+            "status": false
+        },
+        {
+            "devID": "devID2",
+            "name" : "custom2",
+            "type" : "circle",
+            "status": false
+        }
+    ]
+}

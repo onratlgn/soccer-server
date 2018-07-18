@@ -1,0 +1,35 @@
+{
+    "received": {
+        "topic": "$devId/game",
+        "payload": {
+            "gameId": "gid",
+            "step": 0,
+            "timeLim": 0,
+            "condition": {
+                "pass": false,
+                "sensor": "s2",
+                "value": 0.8,
+                "eval": "$lt"
+            }
+        },
+        "payload": {
+            "gameId": "gid",
+            "step": 0,
+            "timeLim": 0,
+            "condition": {
+                "pass": true
+            }
+        }
+    },
+    "sent": {
+        "topic": "$devId/data/$gameId/$step",
+        "payload": {
+            "type": "cone",
+            "data": {
+                "s1": true,
+                "s2": 0.7,
+                "time": 2000
+            }
+        }
+    }
+}
