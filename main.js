@@ -3,9 +3,9 @@ var mongo = require('./mongo')
 var server = require('net').createServer(aedes.handle)
 var httpServer = require('http').createServer()
 var ws = require('websocket-stream')
-var mqPort  = process.env.mqPort  || 1883
-var wsPort  = process.env.wsPort  || 8888
-var webPort = process.env.webPort || 8080
+var mqPort  = process.env.mqPort || 1883
+var wsPort  = process.env.wsPort || 8888
+var webPort = process.env.PORT   || 8080
 
 
 const express = require('express')
