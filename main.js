@@ -6,12 +6,14 @@ var ws = require('websocket-stream')
 var mqPort = 1883
 var wsPort = 8888
 
+/*
 const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.listen(8080, () => console.log('Example app listening on port 8080!'))
+*/
 
 server.listen(mqPort, () => console.log('mqtt listening'))
 ws.createServer({
