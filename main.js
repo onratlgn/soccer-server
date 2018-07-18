@@ -3,17 +3,18 @@ var mongo = require('./mongo')
 var server = require('net').createServer(aedes.handle)
 var httpServer = require('http').createServer()
 var ws = require('websocket-stream')
-var mqPort = 1883
-var wsPort = 8888
+var mqPort  = process.env.mqPort  || 1883
+var wsPort  = process.env.wsPort  || 8888
+var webPort = process.env.webPort || 8080
 
-/*
+
 const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(8080, () => console.log('Example app listening on port 8080!'))
-*/
+app.listen(webPort, () => console.log('Example app listening on port '+ webPort))
+
 
 server.listen(mqPort, () => console.log('mqtt listening'))
 ws.createServer({
